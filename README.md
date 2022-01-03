@@ -1,2 +1,4 @@
 # book-review-app
-node-react-app
+
+React App, Node.js Backend and mysql 
+
