@@ -1,0 +1,167 @@
+:root {
+  --theme_color: #187bcd;
+  --color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color);
+}
+
+.column_left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  background-color: var(--color);
+}
+
+.column_right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  background-color: var(--theme_color);
+  color: var(--color);
+}
+
+.column_right p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 80%;
+  color: var(--color);
+}
+
+.column_right h1 {
+  margin-top: 30px;
+  font-size: 2rem;
+  align-items: left;
+}
+
+.form h1 {
+  margin-top: 30px;
+  font-size: 1.9rem;
+  align-items: left;
+  color: var(--theme_color);
+}
+
+.form h2 {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.btn_left {
+  padding: 20px;
+  font-size: 0.8rem;
+  border: none;
+  width: 65%;
+  margin-top: 35px;
+  border-radius: 3px;
+  background-color: var(--theme_color);
+}
+
+.btn_right {
+  padding: 20px;
+  font-size: 0.8rem;
+  border: none;
+  width: 65%;
+  margin-top: 35px;
+  border-radius: 3px;
+  background-color: var(--color);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 643px) {
+  .form h1 {
+    font-size: 1.7rem;
+  }
+
+  .form h2 {
+    font-size: 0.7rem;
+  }
+  .column_right p {
+    font-size: 0.7rem;
+  }
+  .column_right h1 {
+    font-size: 1.7rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .btn_left {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+  .btn_right {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .form h1 {
+    font-size: 1.4rem;
+  }
+
+  .form h2 {
+    font-size: 0.5rem;
+  }
+  .column_right p {
+    font-size: 0.54rem;
+  }
+  .column_right h1 {
+    font-size: 1.4rem;
+  }
+  .text {
+    font-size: 0.7rem;
+  }
+
+  .btn_left {
+    padding: 15px;
+    font-size: 0.7rem;
+  }
+  .btn_right {
+    padding: 15px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form h1 {
+    font-size: 1.3rem;
+  }
+
+  .form h2 {
+    font-size: 0.4rem;
+  }
+  .column_right p {
+    font-size: 0.5rem;
+  }
+  .column_right h1 {
+    font-size: 1.3rem;
+  }
+  .text {
+    font-size: 0.5rem;
+  }
+
+  .btn_left {
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+  .btn_right {
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+}

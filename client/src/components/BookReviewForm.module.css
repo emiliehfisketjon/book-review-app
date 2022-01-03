@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+.margin {
+  margin-top: 100px;
+}
+
+.form {
+  display: inline-table;
+  height: 400px;
+  width: 400px;
+}
+
+input {
+  width: 80%;
+}
+
+h2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.inputField input {
+  height: 70px;
+}
+

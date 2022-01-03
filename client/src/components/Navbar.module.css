@@ -1,0 +1,93 @@
+:root {
+  --theme_color: #187bcd;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: var(--theme_color);
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: beige;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.links li {
+  list-style: none;
+  text-align: right;
+}
+
+.links a {
+  text-decoration: none;
+  color: beige;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 838px) {
+  .links a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .links a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .links a {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .links a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .links a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .links a {
+    letter-spacing: 0.3px;
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .links a {
+    letter-spacing: 0.2px;
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,77 @@
+/* use of grid, source: https://www.youtube.com/watch?v=rg7Fvvl3taU */
+
+:root {
+  --theme_color: #187bcd;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.review {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.2rem;
+  height: 550px;
+  width: 320px;
+  place-self: center;
+  background-color: var(--theme_color);
+}
+
+.review p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.img {
+  height: 400px;
+  width: 250px;
+}
+
+.img_stars {
+  height: 50px;
+  width: 250px;
+}
+
+.button {
+  border: none;
+  background: none;
+}
+
+@media screen and (max-width: 1782px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1482px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1456px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,84 @@
+:root {
+  --height: 700px;
+  --theme_color: #187bcd;
+  --color: white;
+  --typeSpeed: 6s;
+  --typeCharacters: 30;
+}
+
+.fst_component {
+  height: var(--height);
+  width: 100%;
+  background-color: var(--color);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.fst_component h1 {
+  text-align: center;
+  position: relative;
+  display: table;
+  margin: 0px auto 0px auto;
+  top: 50%;
+  width: max-content;
+}
+
+/* 
+typing animation, source: https://www.youtube.com/watch?v=w1nhwUGsG6M&list=WL&index=6
+*/
+
+.fst_component h1::before,
+.fst_component h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fst_component h1::before {
+ background-color: var(--color);
+ /* 
+ forwards: the background color will not cover the text again 
+ 1s: delay
+ */
+ animation: typing var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards;
+}
+
+.fst_component h1::after {
+    width: 0.125em;
+    background-color: black;
+    /*
+    infinite: infinite loop 
+    1s: delay 
+    */
+    animation: 
+    typing var(--typeSpeed) steps(var(--typeCharacters)) 1s forwards,
+    blink 500ms steps(var(--typeCharacters)) infinite;
+}
+
+.snd_component {
+  height: var(--height);
+  width: 100%;
+
+  background-color: var(--theme_color);
+}
+
+.trd_component {
+  height: var(--height);
+  width: 100%;
+
+  background-color: var(--color);
+}
+
+@keyframes typing {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}

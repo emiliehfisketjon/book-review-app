@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  height: 650px;
+  width: 700px;
+  margin: auto;
+  margin-top: 180px;
+
+  box-shadow: 2px 5px 25px 2px #888888;
+}
+
+@media screen and (max-width: 775px) {
+  .container {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 643px) {
+  .container {
+    width: 500px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .container {
+    width: 400px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 350px;
+    height: 540px;
+  }
+}
