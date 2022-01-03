@@ -60,26 +60,27 @@ function SignUpForm() {
       <div className={form.column_right}>
         <form onSubmit={onSubmitR} className={form.form}>
           <h1>Create user</h1>
-          <div className={form.flexi}>
-            <label>
-              <h2>Firstname</h2>
-              <input
-                type="text"
-                value={firstname}
-                onChange={(e) => setFirstname(e.target.value)}
-              />
-            </label>
+          <div className={form.inputColumn}>
+            <div className={form.flexi}>
+              <label>
+                <h2>Firstname</h2>
+                <input
+                  type="text"
+                  value={firstname}
+                  onChange={(e) => setFirstname(e.target.value)}
+                />
+              </label>
 
-            <label>
-              <h2>Lastname</h2>
-              <input
-                type="text"
-                value={lastname}
-                onChange={(e) => setLastname(e.target.value)}
-              />
-            </label>
-          </div>
-        
+              <label>
+                <h2>Lastname</h2>
+                <input
+                  type="text"
+                  value={lastname}
+                  onChange={(e) => setLastname(e.target.value)}
+                />
+              </label>
+            </div>
+
             <label>
               <h2>Email</h2>
               <input
@@ -109,7 +110,7 @@ function SignUpForm() {
                 onChange={(e) => setPassword2(e.target.value)}
               />
             </label>
-          
+          </div>
 
           <div className={form.text}>
             <input type="checkbox" name="hello" required />I agree to the{" "}

@@ -48,6 +48,7 @@ body {
 .form h1 {
   margin-top: 30px;
   font-size: 1.9rem;
+  align-items: center;
   color: var(--theme_color);
 }
 
@@ -82,9 +83,11 @@ body {
 
 }
 
-input {
+
+.inputColumn input{
   width: 100%;
 }
+
 
 .text input {
   margin-top: 15px;
