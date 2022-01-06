@@ -7,8 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Home Page
 
-https://user-images.githubusercontent.com/93666589/147934690-2c1d0510-970c-4d37-b0ba-072749e29c3f.mov
-
 2. Sign up / Sign In 
 
 https://user-images.githubusercontent.com/93666589/147934713-e3f50ab4-b575-4321-a55d-9ecc6beaf17a.mov
